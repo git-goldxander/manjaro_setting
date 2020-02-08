@@ -1,0 +1,9 @@
+yay -S xrdp
+
+systemctl start xrdp.service
+systemctl start xrdp-sesman.service
+
+systemctl enable xrdp.service
+systemctl enable xrdp-sesman.service
+
+firewall-cmd --zone=public --add-service rdp
