@@ -1,0 +1,15 @@
+[install]
+sudo pacman -S fcitx fcitx-chewing fcitx-gtk2 fcitx-gtk3 fcitx-qt5
+
+[profile]
+code .bash_profile
+
+#for zh-tw input (sudo pacman -S fcitx fcitx-chewing fcitx-gtk2 fcitx-gtk3 fcitx-qt5）--->>
+export XIM_PROGRAM=fcitx
+export XIM=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=”@im=fcitx”
+
+fcitx-autostart
+#for zh-tw input (sudo pacman -S fcitx fcitx-chewing fcitx-gtk2 fcitx-gtk3 fcitx-qt5）<<---
