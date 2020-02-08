@@ -1,3 +1,5 @@
+https://cloud-atlas.readthedocs.io/zh_CN/latest/linux/arch_linux/xrdp.html
+
 yay -S xrdp
 
 systemctl start xrdp.service
